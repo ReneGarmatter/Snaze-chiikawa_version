@@ -51,43 +51,4 @@ Exemplo mínimo (map.txt):
 #######
 ```
 
-Problemas comuns e solução rápida
-- `terminate called after throwing an instance of 'std::runtime_error'` — `directory not found`:
-  - O programa tenta ler arquivos em `assets/` relativo ao diretório de trabalho atual.
-  - Execute o binário a partir do diretório do projeto (onde existe a pasta `assets/`):
-
-```bash
-cd /caminho/para/o/projeto
-./bin/snaze
-```
-
-- `assets/` faltando ou arquivos mal formatados:
-  - Verifique se há arquivos em `assets/` e se cada arquivo tem a linha de dimensões seguida pelo grid.
-  - Se um mapa não tiver o caractere `&` (spawn), o parser lançará uma exceção.
-
-Ignorar binários no Git
-- O repositório já possui `.gitignore` configurado para ignorar `bin/`. Se `bin/` já estiver versionado, remova do índice com:
-
-```bash
-git rm -r --cached bin
-git commit -m "Stop tracking bin/"
-```
-
-Melhorias sugeridas (próximos passos)
-- Adicionar argumentos de linha de comando para configurar diretório de assets, mapa específico e número de rounds.
-- Tratar erros de parser mais graciosamente e reportar qual arquivo está com problema.
-- Corrigir warnings de compilação menores (signed/unsigned, variáveis não usadas).
-- Adicionar testes para o parser (`snake.cpp`) e o pathfinder (`puzzles.cpp`).
-
-Contribuindo
-- Abra issues para bugs e features. Pull requests são bem-vindos — mantenha o estilo de código e adicione testes quando possível.
-
-Licença
-- Não há licença explícita neste repositório. Se for compartilhar/redistribuir, considere adicionar uma licença permissiva (MIT/Apache-2.0) ou outra de sua escolha.
-
-Contato
-- Se precisar que eu torne o programa aceitando argumentos de linha de comando, limpando warnings, ou adicionando testes, diga qual você prefere e eu implemento.
-
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ao5BHHrY)
-﻿# Projeto Snaze
 
