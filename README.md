@@ -1,13 +1,13 @@
 
 # Snaze — Snake (simulador / solver) em C++
 
-Uma implementação simples de uma simulação automática do jogo Snake que lê mapas (puzzles) de arquivos,
-encontra caminhos até itens (comida) usando busca em largura (BFS) e simula o movimento no terminal.
+Uma implementação simples de uma simulação automática do jogo Snake que lê mapas de arquivos,
+encontra caminhos até itens usando busca em largura e simula o movimento no terminal.
 
 Sumário rápido
 - Linguagem: C++17
-- Compilação: Makefile (gera `bin/snaze`)
-- Diretório de mapas: `assets/` (cada arquivo de mapa é um puzzle que o programa lê)
+- Compilação: Makefile 
+- Diretório de mapas: `assets/` 
 
 Requisitos
 - g++ com suporte a C++17 (g++ 7+ recomendado)
